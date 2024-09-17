@@ -17,6 +17,10 @@ resource "google_cloud_run_v2_service" "pgadmin" {
         name = "PGADMIN_DEFAULT_PASSWORD"
         value = "this is a wrong non-existent password"
       }
+      env {
+        name = "PGADMIN_LISTEN_PORT"
+        value = "8080"
+      }
     }
   }
 
