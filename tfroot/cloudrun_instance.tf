@@ -1,5 +1,6 @@
 resource "google_cloud_run_service" "pgadmin" {
   name     = "pgadmin"
+  location = "us-central1"
 
   template {
     spec {
