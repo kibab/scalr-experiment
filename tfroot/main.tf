@@ -11,6 +11,6 @@ terraform {
 
 resource "null_resource" "example" {
   provisioner "local-exec" {
-    command = "echo 'Congrats on your first run!'"
+    command = "echo 'Congrats on your first run! with policy!'"
    }
 }
