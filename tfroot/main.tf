@@ -14,3 +14,7 @@ resource "null_resource" "example2" {
     command = "echo 'Congrats on your first run! with policy!'"
    }
 }
+
+output "example_id" {
+  value = null_resource.example2.id
+}
