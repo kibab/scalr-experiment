@@ -7,5 +7,5 @@ policy "simple_policy" {
 
 policy "deny_old_mysql" {
     enabled = true
-    enforcement_level = "mandatory"
+    enforcement_level = "soft-mandatory"
 }
